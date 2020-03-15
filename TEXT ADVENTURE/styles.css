@@ -1,0 +1,68 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+@font-face{
+  font-family: HeaderFont;
+  src: url(Fonts/stonehen.ttf);
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-image: url("bg3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.Header{
+  font-family: HeaderFont;
+  font-size: 150px;
+  text-align: center;
+  margin: auto;
+  text-shadow: 10px 10px 6px black;
+  color: black;
+  -webkit-text-fill-color: #7FFF00;
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: #006400;
+}
+
+.wrapper {
+  width: 800px;
+  max-width: 80%;
+  background-color: rgba(0, 0, 0, 0.5);;
+  padding: 10px;
+  border-radius: 15px;
+  box-shadow: 0 0 20px 8px black;
+  font-size: 25px;
+  color: white;
+  justify-content: center;
+  margin: auto;
+}
+.container{
+  position: relative;
+  top: 300px;
+}
+
+.btn-grid {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.btn {
+  background-color: hsl(200, 100%, 50%);
+  border: 1px solid hsl(200, 100%, 30%);
+  border-radius: 5px;
+  padding: 5px 10px;
+  color: white;
+  outline: none;
+}
+
+.btn:hover {
+  box-shadow: 0 0 15px 2px white;
+
+  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px white; 
+}
